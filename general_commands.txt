@@ -1,0 +1,25 @@
+###########
+### Git ###
+###########
+--> Generate ssh key:
+$   ssh-keygen -t ed25519 -C "mail@mail.es"
+
+--> Check ssh login in github:
+$   ssh -T git@github.com
+
+--> Add key to ssh agent:
+$   ssh-add ~/.ssh/new_key_id
+
+
+##############
+### Docker ###
+##############
+--> Prettify docker ps command:
+$ docker ps --format "table {{.ID}}\\t{{.Image}}\\t{{.Status}}\\t{{.Names}}\\t{{.Ports}}"
+
+
+##############
+### Python ###
+##############
+--> Install a module for a specific python version:
+$   python_version -m pip install foo
