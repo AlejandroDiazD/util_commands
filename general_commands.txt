@@ -34,3 +34,9 @@ $ conda remove --name <envname> --all
 
 (envname)$ conda install <package>
 (envname)$ pip install <package>
+
+##############
+###   SCP  ###
+##############
+--> secure scp using ssh key
+scp -i my_key.pub /path/to/file_name.txt username@remotehost.com:/path/to/directory
