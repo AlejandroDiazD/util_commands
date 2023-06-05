@@ -24,3 +24,13 @@ $ docker ps --format "table {{.ID}}\\t{{.Image}}\\t{{.Status}}\\t{{.Names}}\\t{{
 ##############
 --> Install a module for a specific python version:
 $   python_version -m pip install foo
+
+
+##############
+###  Conda ###
+##############
+$ conda create --name <envname> python=<version> <optional dependencies>
+$ conda remove --name <envname> --all 
+
+(envname)$ conda install <package>
+(envname)$ pip install <package>
