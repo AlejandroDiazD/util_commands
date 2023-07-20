@@ -39,4 +39,11 @@ $ conda remove --name <envname> --all
 ###   SCP  ###
 ##############
 --> secure scp using ssh key
-scp -i my_key.pub /path/to/file_name.txt username@remotehost.com:/path/to/directory
+$ scp -i my_key.pub /path/to/file_name.txt username@remotehost.com:/path/to/directory
+
+##############
+###   AWS  ###
+##############
+--> Sync clock to solve this error when trying to use S3 from local CLI: "An error occurred (RequestTimeTooSkewed) when calling the ListObjectsV2 operation: The difference between the request time and the current time is too large."
+$ sudo hwclock -s
+
